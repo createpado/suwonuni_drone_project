@@ -23,6 +23,15 @@ public class MainActivity extends AppCompatActivity {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+               /* 여기 이런식으로 선택되었을때 드론에 값주는거 구현해야함
+                switch (R.array.place)
+                {
+                    case 0 : //학생회관
+                    {
+                        
+                    }
+                }
+                */
             }
 
             @Override
