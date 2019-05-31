@@ -1,0 +1,87 @@
+//activity_main.xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/hi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="수원대학교 드론 길잡이"
+            android:textSize="20dp"
+            android:textColor="#f000"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/selecte_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/suwonlog"
+        android:layout_marginTop="11dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/suwonlog"
+            android:text="도착장소선택 : "
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/txt_select_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/place"></Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/suwonlog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hi"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/suwonuniversity"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/choice_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selecte_place"
+        android:layout_marginTop="17dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/choice_button"
+            android:layout_gravity="center"
+            android:layout_marginLeft="150dp"
+            android:text="길찾기" />
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>
